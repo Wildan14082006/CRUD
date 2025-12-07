@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>dartzy</title>
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">My Website</div>
+            <div class="small">menggunakan local storage</div>
+            
+            <nav class="nav" id="main-nav">
+                <a href="#/dashboard" data-route="#/dashboard">dashboard</a>
+                <a href="#/home" data-route="#/home">home</a>
+                <a href="#/add" data-route="#/add">add</a>
+                <a href="#/settings" data-route="#/settings">settings</a>
+                <a href="#/about" data-route="#/about">about</a>
+            </nav>
+            <div>
+                <div class="small">Note</div>
+                <div class="muted">Data Disimpan di LocalStorage</div>
+            </div>
+        </aside>
+        <main class="content" id="view-root"></main>
+    </div>
+
+    <input type="file" id="csvfileinput" accept="csv,text/csv" style="display:none" />
+
+
+    <script src="script.js" ></script>
+</body>
+</html>
